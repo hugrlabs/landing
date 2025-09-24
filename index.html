@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HugrLabs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://db.onlinewebfonts.com/c/1224daf0ef7d2a51bf4294adc9dd409d?family=English+Runic');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #000000;
+        }
+        
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .content {
+            max-width: 800px;
+        }
+        
+        .logo {
+            font-family: 'English Runic', cursive;
+            font-size: clamp(4rem, 9vw, 8rem);
+            font-weight: normal;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            line-height: 0.9;
+            position: relative;
+        }
+        
+        .hugr {
+            color: #000000;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2), 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .labs {
+            color: #8b5cf6;
+            text-shadow: 2px 2px 4px rgba(139,92,246,0.3), 1px 1px 2px rgba(139,92,246,0.2);
+        }
+        
+        .logo::after {
+            content: '◊ ◊ ◊';
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: #8b5cf6;
+            margin-top: 0.5rem;
+            opacity: 0.4;
+            letter-spacing: 0.8rem;
+        }
+        
+        .tagline {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-weight: 300;
+            color: #666666;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+        
+        .description {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            font-weight: 400;
+            color: #999999;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .fade-in {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .fade-in-delay {
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            .tagline {
+                margin-bottom: 0.75rem;
+            }
+        }
+        
+        /* High-DPI displays */
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            .logo, .tagline, .description {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="logo fade-in">
+                <span class="hugr">Hugr</span><span class="labs">Labs</span>
+            </h1>
+            
+            <p class="tagline fade-in-delay">
+                Where intelligence travels beyond boundaries
+            </p>
+            
+            <p class="description fade-in-delay">
+                Inspired by the ancient Norse concept of hugr — the part of consciousness that ventures beyond the physical world to explore and return with insights.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
