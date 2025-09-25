@@ -108,13 +108,48 @@
             .container {
                 padding: 1.5rem;
             }
-            
+
             .logo {
                 margin-bottom: 1rem;
             }
-            
+
             .tagline {
                 margin-bottom: 0.75rem;
+            }
+        }
+
+        /* Extra small devices (iPhone SE and similar) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .logo {
+                font-size: clamp(3rem, 12vw, 4rem);
+                letter-spacing: 0.05em;
+            }
+
+            .logo::after {
+                letter-spacing: 0.4rem;
+                font-size: 0.7rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+                padding: 0 0.5rem;
+                word-wrap: break-word;
+                hyphens: auto;
+            }
+
+            .description {
+                font-size: 0.85rem;
+                padding: 0 0.5rem;
+                word-wrap: break-word;
+                hyphens: auto;
             }
         }
         
